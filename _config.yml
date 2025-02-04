@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Jonghyeon Shin"
 title_separator          : "-"
-name                     : &name "Jonghyeon Shin"
+name                     : &name "Jonghyun Shin"
 description              : &description "personal description"
 url                      : https://jonghyeon-shin.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,7 +22,7 @@ repository               : "jonghyeon-shin/jonghyeon-shin.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Jonghyeon Shin"
+  name             : "Jonghyun Shin"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate student, Korea University"
   location         : "Seoul, South Korea"
