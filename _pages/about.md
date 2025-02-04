@@ -10,7 +10,6 @@ My name is Jonghyun Shin(신종현). I am an undergraduate student at Korea Univ
 
 
 # Education
-=====
 - B.Sc. in Mathematical Education & Statistics
   - Mar 2019 ~ current
   - GPA: 4.32/4.5
