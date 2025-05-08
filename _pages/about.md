@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-My name is Jonghyun Shin(신종현). I am an undergraduate student at Korea University, fortunate to be advised by [Prof. Sejun Park](https://sites.google.com/site/sejunparksite/). I am interested in exploring machine learning & deep learning from a theoretical perspective.
+My name is Jonghyun Shin(신종현). I am an undergraduate student at Korea University, fortunate to be advised by [Prof. Sejun Park](https://sites.google.com/site/sejunparksite/). I am interested in exploring machine learning & deep learning from a theoretical perspective. Here is my formal [CV](jong-hyun-shin.github.io/files/CV.pdf).
 
 
 # Education
