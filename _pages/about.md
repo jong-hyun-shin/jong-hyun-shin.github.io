@@ -298,11 +298,8 @@ body,
 <div class="jh-wrap">
 
 <section class="jh-hero" id="about">
-  <p class="jh-kicker">Korea University · Artificial Intelligence</p>
   <h1>Jonghyun Shin <span class="jh-korean-name">신종현</span></h1>
   <p class="jh-subtitle">
-    M.S.–Ph.D. integrated student in Artificial Intelligence at Korea University,
-    working on the theoretical effects of finite precision and finite randomness in machine learning.
   </p>
 
   <div class="jh-links">
