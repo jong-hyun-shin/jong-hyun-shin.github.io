@@ -327,14 +327,6 @@ body,
     optimization when computation takes place over discrete or fixed-point parameter spaces
     rather than idealized real-valued arithmetic.
   </p>
-
-  <div class="jh-tags" aria-label="Research interests">
-    <span class="jh-tag">Finite-Precision Learning</span>
-    <span class="jh-tag">Generalization & Stability</span>
-    <span class="jh-tag">Differential Privacy</span>
-    <span class="jh-tag">Finite Randomness</span>
-    <span class="jh-tag">Optimization Theory</span>
-  </div>
 </section>
 
 <section class="jh-section" id="news">
@@ -356,7 +348,7 @@ body,
       </div>
     </div>
     <div class="jh-news-item">
-      <div class="jh-date">2025</div>
+      <div class="jh-date">Apr. 2025</div>
       <div>
         Our work on minimum width for universal approximation appeared at
         <strong>ICML 2025</strong>.
@@ -440,10 +432,6 @@ body,
     </li>
   </ul>
 </section>
-
-<p class="jh-footer-note">
-  Research interests and publication status are updated as projects develop.
-</p>
 
 </div>
 
