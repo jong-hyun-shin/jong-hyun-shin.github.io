@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Jonghyeon Shin"
+title                    : "Jonghyun Shin"
 title_separator          : "-"
 name                     : &name "Jonghyun Shin"
-description              : &description "personal description"
+description: "Jonghyun Shin — M.S.–Ph.D. integrated student in Artificial Intelligence at Korea University"
 url                      : https://jong-hyun-shin.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jong-hyun-shin/jong-hyun-shin.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Jonghyun Shin"
   pronouns         : # example: "she/her"  
-  bio              : "Undergraduate student, Korea University"
+  bio: "M.S.–Ph.D. integrated student in Artificial Intelligence, Korea University"
   location         : "Seoul, South Korea"
   employer         : # "Red Brick University"
   uri              : # URL
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : jj_hye0n__
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "jonghyun-shin-545927346"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
