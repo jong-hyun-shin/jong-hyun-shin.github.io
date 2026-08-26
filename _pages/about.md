@@ -1,62 +1,479 @@
 ---
 permalink: /
 title: "Jonghyun Shin"
-author_profile: true
-redirect_from: 
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
-My name is Jonghyun Shin(신종현). I am an undergraduate student at Korea University, fortunate to be advised by [Prof. Sejun Park](https://sites.google.com/site/sejunparksite/). I am interested in exploring machine learning & deep learning from a theoretical perspective. 
 
+<style>
+:root {
+  --jh-bg: #ffffff;
+  --jh-surface: #f7f8fa;
+  --jh-surface-2: #eef1f4;
+  --jh-text: #1f2933;
+  --jh-muted: #64707d;
+  --jh-border: #dde2e7;
+  --jh-accent: #305f8d;
+  --jh-accent-soft: #e9f0f7;
+  --jh-shadow: 0 10px 30px rgba(20, 30, 45, 0.06);
+}
 
-# Education
-- B.Sc. in Mathematical Education & Statistics
-  - Mar 2019 ~ current
-  - GPA: 4.32/4.5
+html[data-theme="dark"] {
+  --jh-bg: #0e1116;
+  --jh-surface: #151a21;
+  --jh-surface-2: #1c232c;
+  --jh-text: #e7ebef;
+  --jh-muted: #a9b2bc;
+  --jh-border: #2a333d;
+  --jh-accent: #8bb8e3;
+  --jh-accent-soft: #18293a;
+  --jh-shadow: none;
+}
 
+html {
+  scroll-behavior: smooth;
+}
 
+body,
+.masthead,
+.greedy-nav,
+.page,
+.page__inner-wrap,
+.page__content,
+.page__footer {
+  background: var(--jh-bg) !important;
+  color: var(--jh-text) !important;
+}
 
-<!--
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+.masthead {
+  border-bottom: 1px solid var(--jh-border) !important;
+}
 
+.masthead a,
+.greedy-nav a,
+.page__footer a {
+  color: var(--jh-text) !important;
+}
 
+.greedy-nav .visible-links a:before {
+  background: var(--jh-accent) !important;
+}
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+.page__title {
+  display: none;
+}
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+.page {
+  float: none !important;
+  width: 100% !important;
+  padding-right: 0 !important;
+}
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+.page__inner-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+.page__content {
+  font-size: 1rem;
+  line-height: 1.72;
+}
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+.jh-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 0 4rem;
+}
 
-**Markdown generator**
+.jh-hero {
+  padding: 4.8rem 0 3.3rem;
+  border-bottom: 1px solid var(--jh-border);
+}
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+.jh-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--jh-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+.jh-hero h1 {
+  margin: 0;
+  color: var(--jh-text);
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+.jh-korean-name {
+  margin-left: 0.4rem;
+  color: var(--jh-muted);
+  font-size: 0.42em;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  vertical-align: middle;
+}
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
--->
+.jh-subtitle {
+  max-width: 740px;
+  margin: 1.2rem 0 0;
+  color: var(--jh-muted);
+  font-size: 1.18rem;
+}
+
+.jh-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.6rem;
+}
+
+.jh-link,
+.jh-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.42rem 0.78rem;
+  border: 1px solid var(--jh-border);
+  border-radius: 999px;
+  background: var(--jh-surface);
+  color: var(--jh-text) !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.jh-link:hover,
+.jh-theme-toggle:hover {
+  transform: translateY(-1px);
+  border-color: var(--jh-accent);
+  background: var(--jh-accent-soft);
+}
+
+.jh-section {
+  padding: 3rem 0 0;
+  scroll-margin-top: 5rem;
+}
+
+.jh-section h2 {
+  margin: 0 0 1.15rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--jh-border);
+  color: var(--jh-text);
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+}
+
+.jh-section p {
+  color: var(--jh-text);
+}
+
+.jh-muted {
+  color: var(--jh-muted);
+}
+
+.jh-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.1rem;
+}
+
+.jh-tag {
+  padding: 0.38rem 0.72rem;
+  border-radius: 999px;
+  background: var(--jh-accent-soft);
+  color: var(--jh-accent);
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.jh-news {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.jh-news-item {
+  display: grid;
+  grid-template-columns: 7.2rem 1fr;
+  gap: 1rem;
+  padding: 0.78rem 0;
+  border-bottom: 1px solid var(--jh-border);
+}
+
+.jh-date {
+  color: var(--jh-muted);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.jh-publication {
+  margin: 1rem 0;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--jh-border);
+  border-radius: 14px;
+  background: var(--jh-surface);
+  box-shadow: var(--jh-shadow);
+}
+
+.jh-publication h3 {
+  margin: 0 0 0.4rem;
+  color: var(--jh-text);
+  font-size: 1.06rem;
+  line-height: 1.42;
+}
+
+.jh-publication p {
+  margin: 0.3rem 0;
+}
+
+.jh-venue {
+  color: var(--jh-accent);
+  font-weight: 700;
+}
+
+.jh-pub-links {
+  margin-top: 0.7rem !important;
+}
+
+.jh-pub-links a,
+.jh-section a {
+  color: var(--jh-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.jh-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jh-list li {
+  padding: 0.78rem 0;
+  border-bottom: 1px solid var(--jh-border);
+}
+
+.jh-item-title {
+  font-weight: 700;
+  color: var(--jh-text);
+}
+
+.jh-item-meta {
+  margin-top: 0.15rem;
+  color: var(--jh-muted);
+  font-size: 0.94rem;
+}
+
+.jh-footer-note {
+  margin-top: 3.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--jh-border);
+  color: var(--jh-muted);
+  font-size: 0.86rem;
+}
+
+@media (max-width: 700px) {
+  .jh-wrap {
+    padding-top: 0.5rem;
+  }
+
+  .jh-hero {
+    padding-top: 3rem;
+  }
+
+  .jh-news-item {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+</style>
+
+<div class="jh-wrap">
+
+<section class="jh-hero" id="about">
+  <p class="jh-kicker">Korea University · Artificial Intelligence</p>
+  <h1>Jonghyun Shin <span class="jh-korean-name">신종현</span></h1>
+  <p class="jh-subtitle">
+    M.S.–Ph.D. integrated student in Artificial Intelligence at Korea University,
+    working on the theoretical effects of finite precision and finite randomness in machine learning.
+  </p>
+
+  <div class="jh-links">
+    <a class="jh-link" href="mailto:uenjgieonj5448@korea.ac.kr">Email</a>
+    <a class="jh-link" href="https://scholar.google.com/citations?user=JGHbuDUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    <a class="jh-link" href="https://github.com/jong-hyun-shin" target="_blank" rel="noopener">GitHub</a>
+    <a class="jh-link" href="https://www.linkedin.com/in/jonghyun-shin-545927346" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="jh-link" href="/files/CV.pdf" target="_blank" rel="noopener">CV</a>
+    <button class="jh-theme-toggle" id="jh-theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
+  </div>
+</section>
+
+<section class="jh-section" id="research">
+  <h2>About & Research</h2>
+  <p>
+    I am a second-year M.S.–Ph.D. integrated student in Artificial Intelligence at
+    Korea University, advised by
+    <a href="https://eil-research.github.io/index.html" target="_blank" rel="noopener">Prof. Sejun Park</a>.
+    My research focuses on how finite numerical precision and finite randomness change
+    the theoretical behavior of machine learning algorithms.
+  </p>
+  <p>
+    In particular, I am interested in understanding their effects on generalization,
+    algorithmic stability, and differential privacy. More broadly, I study learning and
+    optimization when computation takes place over discrete or fixed-point parameter spaces
+    rather than idealized real-valued arithmetic.
+  </p>
+
+  <div class="jh-tags" aria-label="Research interests">
+    <span class="jh-tag">Finite-Precision Learning</span>
+    <span class="jh-tag">Generalization & Stability</span>
+    <span class="jh-tag">Differential Privacy</span>
+    <span class="jh-tag">Finite Randomness</span>
+    <span class="jh-tag">Optimization Theory</span>
+  </div>
+</section>
+
+<section class="jh-section" id="news">
+  <h2>News</h2>
+  <div class="jh-news">
+    <div class="jh-news-item">
+      <div class="jh-date">Jun. 2026</div>
+      <div>
+        Posted our preprint
+        <a href="https://arxiv.org/abs/2606.06934" target="_blank" rel="noopener">
+          “Uniform Stability and Generalization Error of GD and SGD on Fixed-Point Parameters”
+        </a>.
+      </div>
+    </div>
+    <div class="jh-news-item">
+      <div class="jh-date">Sep. 2025</div>
+      <div>
+        Started working with Prof. Sejun Park at Korea University.
+      </div>
+    </div>
+    <div class="jh-news-item">
+      <div class="jh-date">2025</div>
+      <div>
+        Our work on minimum width for universal approximation appeared at
+        <strong>ICML 2025</strong>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="jh-section" id="publications">
+  <h2>Publications & Preprints</h2>
+
+  <article class="jh-publication">
+    <h3>Uniform Stability and Generalization Error of GD and SGD on Fixed-Point Parameters</h3>
+    <p><strong>Jonghyun Shin</strong>, Sejun Park</p>
+    <p class="jh-venue">Preprint, 2026</p>
+    <p class="jh-pub-links">
+      <a href="https://arxiv.org/abs/2606.06934" target="_blank" rel="noopener">arXiv</a>
+    </p>
+  </article>
+
+  <article class="jh-publication">
+    <h3>Minimum Width for Universal Approximation using Squashable Activation Functions</h3>
+    <p><strong>Jonghyun Shin</strong>, Namjun Kim, Geonho Hwang, Sejun Park</p>
+    <p class="jh-venue">International Conference on Machine Learning (ICML), 2025</p>
+    <p class="jh-pub-links">
+      <a href="https://arxiv.org/abs/2504.07371" target="_blank" rel="noopener">arXiv</a>
+      ·
+      <a href="https://proceedings.mlr.press/v267/shin25b.html" target="_blank" rel="noopener">PMLR</a>
+    </p>
+  </article>
+</section>
+
+<section class="jh-section" id="experience">
+  <h2>Education</h2>
+  <ul class="jh-list">
+    <li>
+      <div class="jh-item-title">Korea University</div>
+      <div>B.Sc. in Mathematical Education & Statistics</div>
+      <div class="jh-item-meta">Mar. 2019 – Aug. 2025 · GPA: 4.32 / 4.5</div>
+    </li>
+  </ul>
+</section>
+
+<section class="jh-section" id="honors">
+  <h2>Honors & Awards</h2>
+  <ul class="jh-list">
+    <li>
+      <div class="jh-item-title">Master's Excellence Scholarship in Science and Engineering</div>
+      <div class="jh-item-meta">Korea Student Aid Foundation · Sep. 2025 – Aug. 2027</div>
+    </li>
+    <li>
+      <div class="jh-item-title">Dean's List</div>
+      <div class="jh-item-meta">Korea University · Mar. 2021, Sep. 2023</div>
+    </li>
+  </ul>
+</section>
+
+<section class="jh-section" id="teaching">
+  <h2>Teaching</h2>
+  <ul class="jh-list">
+    <li>
+      <div class="jh-item-title">Teaching Assistant — Calculus</div>
+      <div class="jh-item-meta">Korea University · Fall 2025</div>
+    </li>
+    <li>
+      <div class="jh-item-title">Teaching Assistant — Discrete Mathematics</div>
+      <div class="jh-item-meta">Korea University · Spring 2025</div>
+    </li>
+    <li>
+      <div class="jh-item-title">Teaching Practicum</div>
+      <div class="jh-item-meta">Daeshin High School, Seoul · Apr. 2025</div>
+    </li>
+  </ul>
+</section>
+
+<section class="jh-section" id="service">
+  <h2>Academic Service</h2>
+  <ul class="jh-list">
+    <li>
+      <div class="jh-item-title">Reviewer, NeurIPS 2026</div>
+    </li>
+  </ul>
+</section>
+
+<p class="jh-footer-note">
+  Research interests and publication status are updated as projects develop.
+</p>
+
+</div>
+
+<script>
+(function () {
+  const root = document.documentElement;
+  const button = document.getElementById("jh-theme-toggle");
+  const saved = localStorage.getItem("jh-theme");
+  const systemDark = window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const initial = saved || (systemDark ? "dark" : "light");
+  root.setAttribute("data-theme", initial);
+
+  function updateLabel() {
+    button.textContent =
+      root.getAttribute("data-theme") === "dark" ? "Light mode" : "Dark mode";
+  }
+
+  updateLabel();
+
+  button.addEventListener("click", function () {
+    const next =
+      root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    localStorage.setItem("jh-theme", next);
+    updateLabel();
+  });
+})();
+</script>
