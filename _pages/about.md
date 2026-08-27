@@ -313,7 +313,6 @@ body,
 </section>
 
 <section class="jh-section" id="research">
-  <h2>About & Research</h2>
   <p>
     I am a second-year M.S.–Ph.D. integrated student in Artificial Intelligence at
     Korea University, advised by
