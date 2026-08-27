@@ -307,7 +307,7 @@ body,
     <a class="jh-link" href="https://scholar.google.com/citations?user=JGHbuDUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
     <a class="jh-link" href="https://github.com/jong-hyun-shin" target="_blank" rel="noopener">GitHub</a>
     <a class="jh-link" href="https://www.linkedin.com/in/jonghyun-shin-545927346" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="jh-link" href="/files/CV.pdf" target="_blank" rel="noopener">CV</a>
+    <a class="jh-link" href="/files/CV1.pdf" target="_blank" rel="noopener">CV</a>
     <button class="jh-theme-toggle" id="jh-theme-toggle" type="button" aria-label="Toggle color theme">Dark mode</button>
   </div>
 </section>
