@@ -21,7 +21,7 @@ redirect_from:
 }
 
 html[data-theme="dark"] {
-  --jh-bg: #111f36;
+  --jh-bg: #0c182b;
   --jh-surface: #151a21;
   --jh-surface-2: #1c232c;
   --jh-text: #e7ebef;
