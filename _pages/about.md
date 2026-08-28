@@ -314,17 +314,10 @@ body,
 
 <section class="jh-section" id="research">
   <p>
-    I am a second-year M.S.–Ph.D. integrated student in Artificial Intelligence at
-    Korea University, advised by
-    <a href="https://eil-research.github.io/index.html" target="_blank" rel="noopener">Prof. Sejun Park</a>.
-    My research focuses on how finite numerical precision and finite randomness change
-    the theoretical behavior of machine learning algorithms.
+    I am a second-year M.S.–Ph.D. integrated student in Artificial Intelligence at Korea University, advised by <a href="https://eil-research.github.io/index.html" target="_blank" rel="noopener">Prof. Sejun Park</a>.. Before starting my graduate studies, I double-majored in Mathematics Education and Statistics at Korea University.
   </p>
   <p>
-    In particular, I am interested in understanding their effects on generalization,
-    algorithmic stability, and differential privacy. More broadly, I study learning and
-    optimization when computation takes place over discrete or fixed-point parameter spaces
-    rather than idealized real-valued arithmetic.
+My research focuses on how finite numerical precision and finite randomness alter the theoretical behavior of machine learning algorithms. I am particularly interested in their implications for generalization, expressivity, and differential privacy. More broadly, I study learning and optimization when computation is carried out over discrete or fixed-point parameter spaces, rather than with idealized real-valued arithmetic. My goal is to understand which classical guarantees of machine learning remain valid under such computational constraints, how they change, and what new phenomena emerge as a result.
   </p>
 </section>
 
