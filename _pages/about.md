@@ -350,12 +350,12 @@ My research focuses on how finite numerical precision and finite randomness alte
 </section>
 
 <section class="jh-section" id="publications">
-  <h2>Publications & Preprints</h2>
+  <h2>Publications</h2>
 
   <article class="jh-publication">
     <h3>Uniform Stability and Generalization Error of GD and SGD on Fixed-Point Parameters</h3>
     <p><strong>Jonghyun Shin</strong>, Sejun Park</p>
-    <p class="jh-venue">Preprint, 2026</p>
+    <p class="jh-venue">The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS), 2026</p>
     <p class="jh-pub-links">
       <a href="https://arxiv.org/abs/2606.06934" target="_blank" rel="noopener">arXiv</a>
     </p>
