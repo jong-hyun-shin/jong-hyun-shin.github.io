@@ -327,10 +327,9 @@ My research focuses on how finite numerical precision and finite randomness alte
     <div class="jh-news-item">
       <div class="jh-date">Sep. 2026</div>
       <div>
-        Our paper is accepted to NeurIPS 2026!
-        <a href="https://arxiv.org/abs/2606.06934" target="_blank" rel="noopener">
-          “Uniform Stability and Generalization Error of GD and SGD on Fixed-Point Parameters”
-        </a>.
+        Our paper on <a href="https://arxiv.org/abs/2606.06934" target="_blank" rel="noopener">
+          Uniform Stability and Generalization Error
+        </a> got accepted to NeurIPS 2026!
       </div>
     </div>
     <div class="jh-news-item">
