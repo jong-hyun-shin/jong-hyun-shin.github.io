@@ -2,9 +2,6 @@
 (() => {
   'use strict';
 
-  // GoatCounter 가입 후 발급받은 사이트 코드만 입력하세요.
-  // 예: https://my-site.goatcounter.com → 'my-site'
-  // 빈 문자열이면 비활성화됩니다. 비밀번호나 API 키는 넣지 마세요.
   const siteCode = 'jong-hyun-shin';
   const productionHostname = 'jong-hyun-shin.github.io';
 
